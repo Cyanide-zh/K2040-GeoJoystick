@@ -752,7 +752,7 @@ public final class MainActivity extends Activity {
         if (!Double.isFinite(value)) {
             return 5.0;
         }
-        return Math.max(0.1, Math.min(50.0, value));
+        return Math.max(0.1, Math.min(1000.0, value));
     }
 
     private void saveCurrentAsFavorite() {
