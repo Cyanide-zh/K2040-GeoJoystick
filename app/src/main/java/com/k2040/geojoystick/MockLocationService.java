@@ -375,7 +375,7 @@ public final class MockLocationService extends Service {
         if (Math.abs(speed - WALK_SPEED) < 0.05) {
             return WALK_SPEED;
         }
-        return Math.max(0.1, Math.min(50.0, speed));
+        return Math.max(0.1, Math.min(1000.0, speed));
     }
 
     private double customSpeed() {
