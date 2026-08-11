@@ -365,7 +365,7 @@ final class JoystickOverlay {
         if (Math.abs(speed - WALK_SPEED) < 0.05) {
             return WALK_SPEED;
         }
-        return Math.max(0.1, Math.min(50.0, speed));
+        return Math.max(0.1, Math.min(1000.0, speed));
     }
 
     private double customSpeed() {
@@ -374,7 +374,7 @@ final class JoystickOverlay {
         if (!Double.isFinite(saved)) {
             return 5.0;
         }
-        return Math.max(0.1, Math.min(50.0, saved));
+        return Math.max(0.1, Math.min(1000.0, saved));
     }
 
     private String customSpeedName() {
