@@ -384,7 +384,7 @@ public final class MockLocationService extends Service {
         if (!Double.isFinite(saved)) {
             return 5.0;
         }
-        return Math.max(0.1, Math.min(50.0, saved));
+        return Math.max(0.1, Math.min(1000.0, saved));
     }
 
     private void persistPosition() {
